@@ -1,0 +1,146 @@
+.text-grid {
+    display: flex;
+    justify-content: center; /* Center items in larger view */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 80px; /* Space between items */
+  }
+  
+  .text-item {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+    font-family: "Helvetica Neue";
+    font-weight:lighter;
+    color: #4e4d4d;
+  }
+  .team-item{
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: black;
+    padding-inline: 1rem;
+    margin: 0;
+
+  }
+  
+  .header-item-teammate {
+    font-family: "Helvetica Neue";
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+  }
+  
+  .image-grid-teammate {
+    display: flex;
+    justify-content:end; /* Center items in larger view */
+    flex-wrap: wrap; /* Allow wrapping */
+     gap:2rem;
+    align-items: center;
+    margin-top: 4rem;
+    
+  }
+  
+  .image-item-teammate {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    margin-bottom: 50px;
+    flex: 1;
+    height:350px;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    
+  }
+
+ 
+  
+  .deneme{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    padding-inline: .5rem;
+    
+  }
+  .image-item-teammate img {
+    
+    background-color: cadetblue;
+    max-width: 70%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: rounded corners */
+
+  }
+  @media (min-width: 767px) and (max-width: 1024px)  {
+    .text-item{
+      display: block;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .team-item{
+      font-size: 1.2rem;
+      margin-bottom: .5rem;
+    }
+    .item-team{
+      width: 60%;
+      text-align: center;
+      margin-left: 2rem;
+    }
+    .deneme{
+   
+      margin-bottom: 1rem;
+   
+      
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .image-grid-teammate {
+      display: flex;
+      justify-content: center; /* Center items in larger view */
+      margin-left: 0px;
+      flex-direction: column; /* Stack images vertically */
+      align-items: center; /* Center items horizontally */
+      gap: 0px; /* Adjust space between items */
+      margin-top: 1.7rem;
+    }
+    .deneme{
+      margin-top: 1.7rem;
+      margin-bottom: 1rem;
+      padding-inline: .5rem;
+      
+    }
+    .text-item {
+     
+      padding-inline: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .image-item-teammate {
+      margin-bottom: 1rem; /* Space between stacked items */
+      width: 100%; /* Full width for better centering */
+      max-width: 300px; /* Limit the width for larger screens */
+      display: flex; /* Ensure the flex behavior remains */
+      justify-content: center;
+      text-align: center; /* Center items in the item */
+    }
+    .header-item-teammate {
+      font-size: 4rem;
+
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+
+      .header-item-teammate {
+        font-size: 2.7rem;
+  
+      }
+    }
+  
+  }
+  
+  

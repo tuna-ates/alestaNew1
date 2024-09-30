@@ -1,0 +1,134 @@
+.container {
+  display: flex;
+  flex-direction: row; /* Keep the layout side by side */
+  overflow: hidden; /* Prevent scrolling */
+  margin-top: 120px;
+  height: 100vh;
+}
+
+.left-side {
+  flex: 1; /* Left side takes half the screen */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 1.25rem; /* Add padding for spacing */
+  background-color: #ffffff; /* Background color */
+}
+.right-side {
+  flex: 1; /* Right side takes half the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side img {
+  max-width: 100%; /* Reduce maximum width */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 1.25rem; /* Add some space on top */
+  border-radius: 1.5rem;
+}
+.logoAlesta{
+  width: 8rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: center;
+  margin: 0; /* Reset margin */
+  margin-bottom: 1.25rem; /* Space between items */
+  width: 100%; /* Ensure contact items take full width */
+}
+
+.contact-item img {
+  width: 3.125rem; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 0.9375rem; /* Space between image and text */
+ 
+}
+.logoDivGeneral{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:0.5rem;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column; /* Stack text vertically */
+  text-align: left; /* Align text to the left */
+  margin-left: 1rem;
+}
+
+.header-size-en,
+.header-size-tr {
+  font-family: "Helvetica Neue";
+  font-size: 3.5rem;
+  font-weight: normal;
+  text-align: center; /* Center text */
+  margin: 0 auto; /* Center header */
+  margin-bottom: 2rem;
+  width: fit-content; /* Adjust width to content */
+}
+
+#address{
+  margin-left: 2.75rem;
+}
+
+
+/* Mobile view */
+@media (max-width: 768px) {
+  /* 768px */
+  .container {
+    flex-direction: column; /* Stack vertically on mobile */
+    height: auto; /* Auto height */
+  }
+
+  .left-side,
+  .right-side {
+    flex: none; /* Disable flex */
+    width: 100%; /* Full width */
+    
+  }
+
+  .left-side {
+    align-items: flex-start; /* Align items to the left */
+    padding: 0.25rem; /* Reduced padding for mobile */
+  }
+
+  .header-size-en,
+  .header-size-tr {
+    font-size: 3.0rem; /* Adjust font size for mobile */
+    margin-bottom: 2.5rem;
+    width: 100%; /* Full width */
+  }
+
+  .right-side {
+    display: flex; /* Center image */
+    justify-content: center;
+    align-items: flex-start; /* Align to the top */
+  }
+
+  .contact-item {
+    justify-content:flex-start; /* Align items to the left */
+    margin-left: 0rem; /* Reset margin-left for mobile */
+    margin-right: 0; /* Reset margin-right for mobile */
+  }
+
+  .contact-info {
+    align-items: flex-start; /* Align text to the left */
+  }
+
+  .contact-item img {
+    margin-right: 0.625rem; /* Add space between image and text */
+    margin-bottom: 0; /* Remove bottom margin on mobile */
+  
+  }
+
+  #address{
+    margin-left: 0rem;
+  }
+  
+}
+
